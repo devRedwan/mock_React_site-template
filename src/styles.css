@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----- Generic Styles -------*/
+body {
+  padding: 32px;
+}
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.theme-purple {
+  color: #6415ff;
+}
+
+/* --------- Navbar ------------- */
+nav {
+  display: flex;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  margin-right: 24px;
+}
+
+.nav__logo--img {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.nav__logo--txt {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #243e63;
+  font-size: 24px;
+  font-weight: 900;
+  transition: all 200ms ease-in-out;
+}
+
+.nav__logo--txt:hover {
+  color: #6415ff;
+}
+
+.nav-menu__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu__link {
+  margin: 0 24px;
+  color: #243e63;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  transition: color 300ms ease-in;
+}
+
+.nav-menu__link:hover {
+  color: #6415ff;
+  border-bottom: solid #6415ff 2px;
+}
+
+.nav__link--secondary {
+  margin-left: 48px;
+}
+
+.nav__link--primary {
+  color: #f7fafc;
+  background-color: #6415ff;
+  margin: 0;
+  padding: 12px 32px;
+  border-radius: 20px;
+}
+
+.nav__link--primary:hover {
+  border: none;
+  color: #edf2f7;
+  background-color: #5011cc;
+}
+
+/* ------------ landing section ----------- */
+.landing {
+  padding: 96px 0;
+  display: flex;
+}
+
+.landing__CTA {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__CTA--title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.landing__CTA--para {
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: inherit;
+  color: #243e63;
+}
+
+.landing__CTA--form {
+  position: relative;
+}
+
+.landing__CTA--form-email {
+  padding: 1.25rem 12rem 1.25rem 2rem;
+  border: solid 2px rgb(226, 232, 240);
+  border-radius: 9999px;
+  font-size: 100%;
+}
+
+.landing__CTA--form-email::placeholder {
+  opacity: 0.5;
+}
+
+.landing__CTA--form-submit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4rem;
+  margin: 8px 8px 8px 0%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #f7fafc;
+  background-color: #6415ff;
+  border: none;
+}
+
+.landing__CTA--trusted-brands {
+  margin-top: 5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(160 174 192);
+}
+
+.landing__CTA--trusted-img {
+  padding-right: 8rem;
+  margin-top: 1rem;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.landing__illustration {
+  width: 60%;
+}
+
+.landing__illustration--img {
+  width: 100%;
+}
