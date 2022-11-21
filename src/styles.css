@@ -10,9 +10,14 @@
 body {
   padding: 32px;
 }
+
+.container {
+  padding: 96px 0;
+}
+
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -27,6 +32,48 @@ a {
 
 .theme-purple {
   color: #6415ff;
+}
+
+.subTitle {
+  margin-bottom: 1rem;
+  color: #6415ff;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  color: rgb(36 62 99);
+}
+
+.para {
+  width: 100%;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 1.625;
+  color: rgb(124 139 161);
+}
+
+.learn-more__button {
+  color: #f7fafc;
+  background-color: #6415ff;
+  display: inline-block;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+}
+
+.learn-more__button:hover {
+  background-color: #5011cc;
 }
 
 /* --------- Navbar ------------- */
@@ -201,30 +248,13 @@ nav {
   align-items: center;
 }
 
-.features__subTitle {
-  margin-bottom: 1rem;
-  color: #6415ff;
-  font-size: inherit;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .features__title {
-  font-size: 3rem;
   text-align: center;
-  font-weight: 900;
-  letter-spacing: 0.025em;
-  color: rgb(36 62 99);
 }
 
 .features__header--para {
-  width: 100%;
   text-align: center;
-  font-size: 1.125rem;
-  margin-top: 1rem;
   max-width: 36rem;
-  font-weight: 500;
-  line-height: 1.625;
 }
 
 .feature__cards {
@@ -277,3 +307,171 @@ nav {
   color: rgb(124 139 161);
 }
 
+/* ---------- Quality Work Section ---------- */
+
+.quality-section__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.quality__text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.quality__text--button {
+  margin-top: 2rem;
+}
+
+.quality__illustration {
+  width: 50%;
+}
+
+.quality__illustration--img {
+  width: 100%;
+  border: solid rgb(226, 232, 240) 1px;
+}
+
+/* ----------- steps ------------------. */
+.steps-section__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.steps__illustration {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.steps__illustration--img {
+  max-width: 100%;
+}
+
+.steps__text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.steps__get-started-steps {
+  margin-top: 3rem;
+}
+
+.steps__get-started-step {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.steps__get-started-step--number {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: rgb(203 213 224);
+}
+
+.steps__get-started-step--description {
+  margin-left: 1.5rem;
+}
+
+.steps__get-started-step--description-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.steps__get-started-step--description-para {
+  margin-top: 0.75rem;
+  max-width: 20rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2;
+  color: rgb(113 128 150);
+}
+
+/* --------------- Values ----------- */
+.values-section__wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.values__text-wrapper {
+  width: 50%;
+  margin-right: 4rem;
+  padding: 2rem 0;
+}
+
+.values__text--subparas {
+  display: flex;
+  max-width: none;
+  text-align: left;
+}
+
+.values__text--subpara {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.values__text--subpara-header {
+  display: flex;
+  align-items: center;
+}
+
+.values__text--subpara-header-icon {
+  padding: 0.5rem;
+  flex-shrink: 0;
+  margin: auto;
+  border-radius: 9999px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.dollar-icon {
+  background-color: #9ae6b4;
+  color: rgb(39 103 73);
+}
+
+.case-icon {
+  background-color: rgb(254, 178, 178);
+  color: rgb(155, 44, 44);
+}
+
+.values__text--subpara-header-title {
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.values__text--subpara-description {
+  margin-top: 1rem;
+  line-height: 1.625;
+  color: #718096;
+}
+
+.values__text--button {
+  margin-top: 3rem;
+}
+
+.values__illustration {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.values__illustration--img {
+  width: 100%;
+}
