@@ -475,3 +475,9 @@ nav {
 .values__illustration--img {
   width: 100%;
 }
+
+/* --------------- Pricing ----------- */
+.pricing__text--wrapper {
+  text-align: center;
+}
+
