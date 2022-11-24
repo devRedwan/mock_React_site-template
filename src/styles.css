@@ -481,3 +481,145 @@ nav {
   text-align: center;
 }
 
+.pricing__plans--wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pricing__plan {
+  position: relative;
+  margin-right: 2rem;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.pricing__plan--top-border {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 0.5rem;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.enterprise-plan__top-border {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.pricing__plan--header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  line-height: 1.625;
+  font-weight: 700;
+}
+
+.pricing__plan--header-name {
+  font-size: 1.25rem;
+
+  color: #1a202c;
+}
+
+.pricing__plan--header-price {
+  font-size: 3rem;
+
+  margin: 0.25rem 0;
+}
+
+.pricing__plan--header-duration {
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: #a0aec0;
+}
+
+.pricing__plan--features {
+  padding: 2rem;
+  border-top: solid #e2e8f0 2px;
+  border-bottom: solid #e2e8f0 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__plan--feature-header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.pricing__plan--feature {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  color: #718096;
+}
+
+.pricing__plan--action {
+  padding: 2rem 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing__plan--action-button {
+  width: 100%;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #f7fafc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+}
+
+.business__pricing--plan {
+  border-radius: 0.5rem;
+  background: #6415ff;
+}
+
+.business__header--name,
+.business__header--price,
+.business__header--duration,
+.business__feature--header,
+.business__feature {
+  color: #f7fafc;
+}
+
+.business-plan__action--button {
+  background: #f7fafc;
+  color: #6415ff;
+}
+
+.enterprise-plan__action--button {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
