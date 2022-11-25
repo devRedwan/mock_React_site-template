@@ -623,3 +623,27 @@ nav {
     rgb(254, 178, 178) 100%
   );
 }
+
+/* --------------- Testimony ----------- */
+.testimony__section--wrapper {
+  display: flex;
+}
+
+.testimony__illustration {
+  width: 50%;
+}
+
+.testimony__illustration--img {
+  width: 100%;
+}
+
+.testimony__text--wrapper {
+  width: 50%;
+  padding-left: 4rem;
+}
+
+.testimony__text--testimonials {
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: left;
+}
