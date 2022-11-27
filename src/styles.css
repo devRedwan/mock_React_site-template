@@ -916,8 +916,8 @@ nav {
   }
 
   .landing__CTA--form {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .landing__CTA--form-email {
@@ -950,11 +950,12 @@ nav {
 /*--------------*/
 
 @media (max-width: 1024px) {
+  /* NavBar */
   .nav-menu__links {
     position: absolute;
     top: 0;
     left: auto;
-    right: -105%;
+    right: 0;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -963,11 +964,21 @@ nav {
     border: solid 2px rgb(226, 232, 240);
     padding: 2rem;
     z-index: 999;
-    transition: all 500ms ease-in-out;
+    display: none;
+    animation: navBar_fly_in 200ms ease-in-out;
+  }
+
+  @keyframes navBar_fly_in {
+    0% {
+      transform: translateX(105%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .nav-menu__links.active {
-    right: 0;
+    display: flex;
   }
 
   .nav-menu__links .nav-menu {
@@ -994,41 +1005,78 @@ nav {
     color: #6415ff;
   }
 
-  .landing__CTA--form-email {
-    padding-right: 10rem;
+  /* Generic */
+
+  .title {
+    width: 100%;
+    font-size: 2.25rem;
   }
 
-  .landing__CTA--form-submit {
-    margin-right: 0.3rem;
+  .para {
+    font-size: 1rem;
+    width: 100%;
+  }
+  /* Landing */
+
+  .landing {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .landing__CTA {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32rem;
+    text-align: center;
+  }
+
+  .landing__CTA--title {
+    font-size: 1.875rem;
+  }
+
+  .landing__CTA--trusted-brands {
+    margin-top: 3rem;
+  }
+
+  .landing__CTA--trusted-img {
+    padding-right: 0;
+  }
+
+  .landing__illustration {
+    width: 100%;
+    min-width: 0px;
+    max-width: 32rem;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing__illustration--img {
+    width: 100%;
+  }
+
+  /* Quality */
+  .quality-section__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .quality__text-container {
+    margin-right: 3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*             Desktops               */
 @media (max-width: 960px) {
   /* Generic */
-
-  .subTitle {
-    text-align: center;
-  }
-
-  .title {
-    text-align: center;
-  }
 
   .para {
     text-align: center;
@@ -1043,34 +1091,7 @@ nav {
   .learn-more__button {
     text-align: center;
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*             Tablet               */
 @media (max-width: 768px) {
@@ -1106,14 +1127,6 @@ nav {
   }
 
   /* landing */
-  .landing {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .landing__CTA {
-    width: 100%;
-  }
 
   .landing__CTA--form-email {
     width: 100%;
