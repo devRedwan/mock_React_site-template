@@ -105,6 +105,7 @@ nav {
 }
 
 .nav__container {
+  position: relative;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -173,6 +174,10 @@ nav {
   background-color: #5011cc;
 }
 
+.burger_menu_icon {
+  display: none;
+}
+
 /* ------------ landing section ----------- */
 .landing {
   padding: 96px 0;
@@ -183,6 +188,7 @@ nav {
   width: 40%;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .landing__CTA--title {
@@ -192,7 +198,7 @@ nav {
 }
 
 .landing__CTA--para {
-  margin: 2rem 0;
+  margin: 2rem auto;
   font-size: 1rem;
   line-height: inherit;
   color: #243e63;
@@ -367,6 +373,9 @@ nav {
 
 .quality__illustration {
   width: 50%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .quality__illustration--img {
@@ -379,7 +388,6 @@ nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .steps__illustration {
@@ -519,7 +527,15 @@ nav {
 /* --------------- Pricing ----------- */
 
 .pricing__text--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.pricing__text--para {
   text-align: center;
+  max-width: 36rem;
 }
 
 .pricing__plans--wrapper {
@@ -527,7 +543,9 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
 }
 
 .pricing__plan {
@@ -889,7 +907,175 @@ nav {
   cursor: pointer;
   border-radius: 9999px;
 }
+
 /* ----------- responsive -------- media ---------- */
+
+@media (max-width: 1195px) {
+  .landing__CTA--title {
+    font-size: 2.25rem;
+  }
+
+  .landing__CTA--form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .landing__CTA--form-email {
+    padding-right: 12rem;
+  }
+
+  .landing__CTA--form-submit {
+    margin-right: 1.75rem;
+  }
+
+  /* Pricing Plans */
+  .pricing__plan--features {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+/*--------------*/
+
+@media (max-width: 1095px) {
+  .landing__CTA--form-email {
+    padding-right: 11rem;
+  }
+
+  .landing__CTA--form-submit {
+    margin-right: 0.75rem;
+  }
+}
+
+/*--------------*/
+
+@media (max-width: 1024px) {
+  .nav-menu__links {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -105%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 2px rgb(226, 232, 240);
+    padding: 2rem;
+    z-index: 999;
+    transition: all 500ms ease-in-out;
+  }
+
+  .nav-menu__links.active {
+    right: 0;
+  }
+
+  .nav-menu__links .nav-menu {
+    margin: 1rem auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .nav-menu__link {
+    font-size: 1.125rem;
+    margin: 1rem 0;
+  }
+
+  .burger_menu_icon {
+    display: block;
+    z-index: 999;
+    margin: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+  }
+
+  .burger-menu-icon:active:hover:focus {
+    color: #6415ff;
+  }
+
+  .landing__CTA--form-email {
+    padding-right: 10rem;
+  }
+
+  .landing__CTA--form-submit {
+    margin-right: 0.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*             Desktops               */
+@media (max-width: 960px) {
+  /* Generic */
+
+  .subTitle {
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .para {
+    text-align: center;
+    width: 100%;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124 139 161);
+  }
+
+  .learn-more__button {
+    text-align: center;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*             Tablet               */
+@media (max-width: 768px) {
+}
+/*             Phone               */
 @media (max-width: 576px) {
   /* Generic */
   .container {
@@ -917,11 +1103,6 @@ nav {
 
   .learn-more__button {
     text-align: center;
-  }
-
-  /* Navbar */
-  .nav-menu__links {
-    display: none;
   }
 
   /* landing */
@@ -990,6 +1171,13 @@ nav {
   }
 
   /* steps  */
+
+  .steps-section__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .steps__illustration {
     width: 100%;
   }
@@ -1046,9 +1234,15 @@ nav {
   }
 
   /* pricing */
+  .pricing__plans--wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .pricing__plan {
     margin-top: 4rem;
     margin-right: auto;
+    margin-left: auto;
   }
 
   /* Testimony */

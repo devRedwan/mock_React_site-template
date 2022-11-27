@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock React Site</title>
+    <script
+      src="https://kit.fontawesome.com/46139afb7e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -25,25 +29,37 @@
               >
             </div>
             <ul class="nav-menu__links">
-              <li><a href="#" class="nav-menu__link">About</a></li>
-              <li><a href="#" class="nav-menu__link">Blog</a></li>
-              <li><a href="#" class="nav-menu__link">Pricing</a></li>
-              <li><a href="#" class="nav-menu__link">Contact Us</a></li>
-              <li>
+              <li class="nav-menu">
+                <a href="#" class="nav-menu__link">About</a>
+              </li>
+              <li class="nav-menu">
+                <a href="#" class="nav-menu__link">Blog</a>
+              </li>
+              <li class="nav-menu">
+                <a href="#" class="nav-menu__link">Pricing</a>
+              </li>
+              <li class="nav-menu">
+                <a href="#" class="nav-menu__link">Contact Us</a>
+              </li>
+              <li class="nav-menu">
                 <a href="#" class="nav-menu__link nav__link--secondary"
                   >Login</a
                 >
               </li>
-              <li>
+              <li class="nav-menu">
                 <a href="#" class="nav-menu__link nav__link--primary"
                   >Sign Up</a
                 >
               </li>
             </ul>
+
+            <div class="burger_menu_icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </nav>
 
-        <section class="landing row">
+        <section id="landing" class="landing row">
           <div class="landing__CTA">
             <h1 class="landing__CTA--title title">
               Beautiful React Templates
@@ -658,4 +674,5 @@
       </div>
     </footer>
   </body>
+  <script src="/src/script.js"></script>
 </html>
